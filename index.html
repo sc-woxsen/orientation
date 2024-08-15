@@ -80,7 +80,8 @@
     .instagram-item {
         flex: 1 1 100%; 
     }
-}
+
+
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -88,6 +89,7 @@
     width: 30px;
     height: 20px;
     cursor: pointer;
+    z-index: 1001;
 }
 
 .menu-toggle .bar {
@@ -96,6 +98,19 @@
     background-color: #fff;
     border-radius: 5px;
     transition: all 0.3s ease;
+}
+
+/* Change hamburger to "X" when active */
+.menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 @media (max-width: 767px) {
@@ -453,6 +468,17 @@
         this.classList.toggle('active');
         document.getElementById('nav-links').classList.toggle('active');
     });
+
+    document.addEventListener('click', function(event) {
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+        
+        if (!mobileMenu.contains(event.target) && !navLinks.contains(event.target)) {
+            mobileMenu.classList.remove('active');
+            navLinks.classList.remove('active');
+        }
+    });
+
 
  </script>
 </body>
