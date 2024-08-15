@@ -1,4 +1,3 @@
-/* General Styling */
 body {
     margin: 0;
     font-family: 'Poppins', Arial, sans-serif;
@@ -172,12 +171,59 @@ a:hover {
     margin-bottom: 15px;
 }
 
-
 footer {
     padding: 20px;
     background-color: #222;
     text-align: center;
     color: #ccc;
+}
+
+
+@media (max-width: 767px) {
+    .navbar .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .section {
+        padding: 50px 20px;
+    }
+
+    .section h2 {
+        font-size: 2em;
+    }
+
+    .about-us-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us-content .text-content,
+    .about-us-content .image-content {
+        flex: 1 1 100%;
+    }
+
+    .clubs-wrapper {
+        flex-direction: column;
+    }
+
+    .clubs {
+        flex: 1 1 100%;
+    }
+
+    .events {
+        grid-template-columns: 1fr;
+    }
+
+    .club img {
+        width: 60px;
+        height: 60px;
+        margin-right: 15px;
+    }
+
+    .club-info h4 {
+        font-size: 1.2em;
+    }
 }
 
 @media (min-width: 768px) {
@@ -186,13 +232,25 @@ footer {
         flex: 1 1 45%;
     }
 
-   
-
     .clubs {
         flex: 1 1 45%;
     }
 
     .events {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .events {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 1.5em;
+    }
+
+    .navbar .navbar-links a {
+        font-size: 1.2em;
     }
 }
