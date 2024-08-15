@@ -449,7 +449,11 @@
  
          window.onload = function() {
              openPopup();}
- 
+    document.getElementById('mobile-menu').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.getElementById('nav-links').classList.toggle('active');
+    });
+
  </script>
 </body>
 </html>
