@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOAD Orientation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="scripts.js" defer></script>
+    <style>
+        
+
+#popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #popup img {
+            max-width: 60%;
+            max-height: 60%;
+            border-radius: 8px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 80px;
+            right: 100px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #960303;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #960303;
+}
+.instagram-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 1rem; 
+    padding: 1rem;
+}
+
+.instagram-item {
+    flex: 1 1 calc(33.333% - 1rem); 
+    max-width: 100%;
+}
+
+.instagram-media {
+    width: 100% !important; 
+    margin: 0 auto; 
+}
+
+@media (max-width: 768px) {
+    .instagram-item {
+        flex: 1 1 calc(50% - 1rem); 
+    }
+}
+
+@media (max-width: 480px) {
+    .instagram-item {
+        flex: 1 1 100%; 
+    }
+}
+</style>
+</head>
+<body class="bg-black text-white">
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">WOXSEN UNIVERSITY - STUDENT COUNCIL</a>
+            <div class="navbar-links">
+                <a class="nav-link" href="#about-us">About Us</a>
+                <a class="nav-link" href="#clubs">Clubs</a>
+                <a class="nav-link" href="#events">Events</a>
+                <a class="nav-link" href="#join-us">Join Us</a>
+            </div>
+        </div>
+    </nav>
+    <div id="popup">
+        <div class="close-btn" onclick="closePopup()">×</div>
+       <center>
+      <a href="https://www.instagram.com/woxsen_student_council/" target="_blank"><img src="KYC pop up.webp" alt="Popup Image"></a></center>
+    </div>
+    <section id="about-us" class="section">
+        <div class="container about-us-content">
+            <div class="text-content">
+                <h2>About Us</h2>
+                <p style="text-align: left;">Woxsen University's Student Council is a dynamic force driving student affairs and campus life. As the primary voice for student interests, the council spearheads initiatives that enhance the educational experience. Their innovative leadership has been crucial in establishing Woxsen as a premier institution. Through their dedication, the Student Council fosters an environment of excellence, empowerment, and holistic growth, solidifying Woxsen's reputation for outstanding student engagement and educational innovation. </p>
+            </div>
+            <div class="image-content">
+                <img src="sc logo.png" alt="Council Logo" style="height: 450px;">
+            </div>
+        </div>
+    </section>
+    <div class="instagram-container">
+        <div class="instagram-item">
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C-k7Vzmqo7g/?utm_source=ig_embed&utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+            </blockquote>
+        </div>
+        <div class="instagram-item">
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C-k5m5JzkoQ/?utm_source=ig_embed&utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+            </blockquote>
+        </div>
+        <div class="instagram-item">
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C-k4a7XKq_p/?utm_source=ig_embed&utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+            </blockquote>
+        </div>
+    </div>
+    <script async onerror="var a=document.createElement('script');a.src='https://iframely.net/files/instagram_embed.js';document.body.appendChild(a);" src="https://www.instagram.com/embed.js"></script>
+    <br>
+
+    <section id="clubs" class="section section-dark">
+        <div class="container">
+            <h2>Clubs</h2>
+            <div class="clubs-wrapper">
+                <div class="clubs university-clubs">
+                    <h3>University Level Clubs</h3>
+                    <a href="https://sites.google.com/view/animalwelfareclub/" target="_blank" style="text-decoration: none;">  <div class="club">
+                        <img src="animal welfare.jpg" alt="Club 1">
+                        <div class="club-info">
+                            <h4>Animal welfare Club</h4>
+                            <p style="color: aliceblue;">President: Pratham Yadav</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/utopiaesports/" target="_blank" style="text-decoration: none;">      <div class="club">
+                        <img src="utop.png" alt="Club 1">
+                        <div class="club-info">
+                            <h4>UTOPIA ESPORTS</h4>
+                            <p>President: Sremanth M</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/theliteratureclub/" target="_blank" style="text-decoration: none;">   <div class="club">
+                        <img src="literature.png" alt="Club 1">
+                        <div class="club-info">
+                            <h4>The Literature Club</h4>
+                            <p>President: Bhuvisha Shri</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/jashn-the-cultural-club/" target="_blank" style="text-decoration: none;">       <div class="club">
+                        <img src="jaashn.png" alt="Club 1">
+                        <div class="club-info">
+                            <h4>Jashn- The Cultural Club</h4>
+                            <p>President: Avani Reddy</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/ignite-woxsen/" target="_blank" style="text-decoration: none;">   <div class="club">
+                        <img src="ignite.jpg" alt="Club 1">
+                        <div class="club-info">
+                            <h4>Ignite - The Entrepreneurship Club</h4>
+                            <p>President: Sridevi</p>
+                        </div>
+                    </div></a>
+                  
+                    <a href="https://sites.google.com/view/just-naach/" target="_blank" style="text-decoration: none;">     <div class="club">
+                        <img src="just naash.jpg" alt="Club 1">
+                        <div class="club-info">
+                            <h4>Just Naach - The Dance Club</h4>
+                            <p>President:  Prerna Solanki</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/octaves/" target="_blank" style="text-decoration: none;">      <div class="club">
+                        <img src="octaves.png" alt="Club 1">
+                        <div class="club-info">
+                            <h4>Octaves - The Music Club</h4>
+                            <p>President: Rohit Reddy</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/marketingdirectorsclub/" target="_blank" style="text-decoration: none;">    <div class="club">
+                        <img src="mdc.png" alt="Club 1">
+                        <div class="club-info">
+                            <h4>Marketing Directors Club</h4>
+                            <p>President: Aditya Yadav</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/the-paparazzi-club/" target="_blank" style="text-decoration: none;">    <div class="club">
+                        <img src="papparazzi.png" alt="Club 1">
+                        <div class="club-info">
+                            <h4>Papparazi - The Photography Club</h4>
+                            <p>President: Pavan BS</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/woxsen-debate-club/" target="_blank" style="text-decoration: none;">      <div class="club">
+                        <img src="Debate Club Logo - deeksha patel.png" alt="Club 1">
+                        <div class="club-info">
+                            <h4>Debate Club</h4>
+                            <p>President: Deeksha</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/chitrastra/" target="_blank" style="text-decoration: none;">     <div class="club">
+                        <img src="chitra.jpeg" alt="Club 1">
+                        <div class="club-info">
+                            <h4>ChitraAstra - The Film Club</h4>
+                            <p>President: Priyatham</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/skribble-club/" target="_blank" style="text-decoration: none;">     <div class="club">
+                        <img src="scribble.jpeg" alt="Club 1">
+                        <div class="club-info">
+                            <h4>Scribble Club</h4>
+                            <p>President: Keerthi Reedy</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/rotaractclub/" target="_blank" style="text-decoration: none;">     <div class="club">
+                        <img src="rotaract.png" alt="Club 1">
+                        <div class="club-info">
+                            <h4>Rotaract Club</h4>
+                            <p>President: Sanjitha</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/sustainability-woxsen/home" target="_blank" style="text-decoration: none;">     <div class="club">
+                        <img src="sustnibility.jpeg" alt="Club 1">
+                        <div class="club-info">
+                            <h4>James A.F. stoner Sustainbility Club</h4>
+                            <p>President: Chetna</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/nexus-club/" target="_blank" style="text-decoration: none;">     <div class="club">
+                        <img src="Nexus final logo - Akshitha Ak.jpg" alt="Club 1">
+                        <div class="club-info">
+                            <h4>Nexus</h4>
+                            <p>President: Akshita</p>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="clubs school-clubs">
+                    <h3>School Level Clubs</h3>
+                    <a href="https://sites.google.com/view/finwiz-woxsen/" target="_blank" style="text-decoration: none;">   <div class="club">
+                        <img src="FinWiz Club Logo - Saiganesh Iyer.png" alt="Club 2">
+                        <div class="club-info">
+                            <h4>FinWize - The Finance Club</h4>
+                            <p>President: Sai Ganesh</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/spectrum-woxsen/" target="_blank" style="text-decoration: none;">   <div class="club">
+                        <img src="spectrum.png" alt="Club 2">
+                        <div class="club-info">
+                            <h4>Spectrum</h4>
+                            <p>President: Aanchal Pallod</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/pdclub/" target="_blank" style="text-decoration: none;">   <div class="club">
+                        <img src="product design.jpg" alt="Club 2">
+                        <div class="club-info">
+                            <h4>Product Design Club</h4>
+                            <p>President: Dedeepya N</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/fashion-design-club/" target="_blank" style="text-decoration: none;">   <div class="club">
+                        <img src="Fashion Design Logo (White BG) - Suhrudai Nivas (1).jpg" alt="Club 2">
+                        <div class="club-info">
+                            <h4>FASHION DESIGN CLUB</h4>
+                            <p>President: Akshitha N</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/crowdcore/" target="_blank" style="text-decoration: none;">   <div class="club">
+                        <img src="crowdcore.jpg" alt="Club 2">
+                        <div class="club-info">
+                            <h4>CrowdCore - The Marketing Club</h4>
+                            <p>President: Sreelu Edla</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/tantra-woxsen/" target="_blank" style="text-decoration: none;">   <div class="club">
+                        <img src="tantra.jpg" alt="Club 2">
+                        <div class="club-info">
+                            <h4>Tantra - The Operations Club</h4>
+                            <p>President: Ramani</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/humanique-woxsen/home" target="_blank" style="text-decoration: none;">   <div class="club">
+                        <img src="hr club.png" alt="Club 2">
+                        <div class="club-info">
+                            <h4>Humanique - The HR club</h4>
+                            <p>President: Sindhuja Dullam</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/club-gensis/" target="_blank" style="text-decoration: none;">     <div class="club">
+                        <img src="Club Genesis.jpeg" alt="Club 2">
+                        <div class="club-info">
+                            <h4>Club Genesis</h4>
+                            <p>President: Vedehi</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/tech-club-woxsen/home" target="_blank" style="text-decoration: none;">    <div class="club">
+                        <img src="Techclub_20240808_174715_0000 - Adip.png" alt="Club 2">
+                        <div class="club-info">
+                            <h4>Technology Club</h4>
+                            <p>President: Adip Krishna</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/cd-club/" target="_blank" style="text-decoration: none;">   <div class="club">
+                        <img src="Communication Design Club.png" alt="Club 2">
+                        <div class="club-info">
+                            <h4>Communication Design Club</h4>
+                            <p>President: Priyanshu Dutta</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/id-club/" target="_blank" style="text-decoration: none;">   <div class="club">
+                        <img src="Interior Design Club.jpg" alt="Club 2">
+                        <div class="club-info">
+                            <h4>Interior Design Club</h4>
+                            <p>President: M. Sri Nibha</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/legal-club/" target="_blank" style="text-decoration: none;">   <div class="club">
+                        <img src="legal.png" alt="Club 2">
+                        <div class="club-info">
+                            <h4>Legal Eagle</h4>
+                            <p>President: Siri Yadav</p>
+                        </div>
+                    </div></a>
+                    <a href="https://sites.google.com/view/aesthetrix/" target="_blank" style="text-decoration: none;">   <div class="club">
+                        <img src="aethetrix.jpg" alt="Club 2">
+                        <div class="club-info">
+                            <h4>Aesthetrix</h4>
+                            <p>President: AAyushman Singh</p>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="events" class="section">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <div class="events">
+                <div class="event">
+                    <h3>Woxsen Olympics</h3>
+                    <p>Date: 2nd - 5th September 2024</p>
+                </div>
+                <div class="event">
+                    <h3>In-House Sporting Leagues</h3>
+                    <p>Tentative Date: September 2024 - February 2025</p>
+                </div>
+                <div class="event">
+                    <h3>GIC</h3>
+                    <p>Date:4th September 2024</p>
+                </div>
+                <div class="event">
+                    <h3>Innovation Summit</h3>
+                    <p>Tentative Date: December 2024</p>
+                </div>
+                <div class="event">
+                    <h3>Tedx</h3>
+                    <p>Tentative Date: February 2025</p>
+                </div>
+                <div class="event">
+                    <h3>Infinity</h3>
+                    <p>Date:2-5 March 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="join-us" class="section">
+        <div class="container">
+            <h2>Join Us</h2>
+            <img src="qrcode_122019245_3fd3cec7fdaddddc3fa2a32097288737.png" alt="QR Code" style="width: 400px;">
+        </div>
+    </section>
+    <section id="qna" class="section section-dark">
+        <div class="container">
+            <h3>Reach Out To Us</h3>
+            <p>studentaffairs@woxsen.edu.in</p>
+            <p>9010808501</p>
+            <br><br>
+        </div>
+    </section>
+    <footer class="text-center section-dark">
+        <p>&copy;WOXSEN UNIVERISTY - STUDENT COUNCIL</p>
+    </footer>
+    
+<script>
+    function openPopup() {
+             document.getElementById('popup').style.display = 'flex';
+         }
+ 
+         function closePopup() {
+             document.getElementById('popup').style.display = 'none';
+         }
+ 
+         window.onload = function() {
+             openPopup();}
+ 
+ </script>
+</body>
+</html>
